@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- W3C Recommendation to declare primary langaugae for each web page using the lang attribute -->
+<html lang="en">
+
+<head>
+  <!-- Added the meta tag -->
+  <!-- Added the charset attribute to tell page character encoding -->
+  <meta charset="utf-8">
+  <!-- Added viewport to let the browser know how to set page dimension and its scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#317EFB"/>
+  <script type="application/javascript" charset="utf-8" src="js/idb.js"></script>
+  <meta name="Description" content="MWS Nanodegree Stage 2 Project By Harpreet Singh">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1><a href="/">Restaurant Reviews</a></h1>
+    </nav>
+  </header>
+
+  <!-- Added the skip link -->
+  <div role="link" class="skip">
+    <a href="#restaurant" class="skip-nav">Jump to Restaurant Details</a>
+  </div>
+
+  <main id="maincontent">
+    <section id="map-container" role="application" aria-label="Map having Restaurant Locations">
+      <div id="map"></div>
+    </section>
+    <section id="restaurant" aria-label="Restaurants Details">
+      <div class="filter-options" role="search">
+        <h2>Filter Results</h2>
+        <select aria-label="Neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+        <select aria-label="Cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+      </div>
+      <ul  aria-label="List of Restaurants" id="restaurants-list"></ul>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/service_worker_register.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
+
+
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+
+</body>
+
+</html>
