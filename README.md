@@ -18,9 +18,9 @@ This is the Progressive Web Application built using HTML, CSS , JavaScript and J
 
 ```node server```
 
-3. Then download my project i.e mws-restaurant-stage-2
+3. Then download my project i.e mws-restaurant-stage-3-udacity
 
-4. Start the server using below command :
+4. Go to the project directory and start the server using below command :
 
 ```python -m SimpleHTTPServer 8000```
 
