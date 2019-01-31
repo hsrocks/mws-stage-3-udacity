@@ -31,3 +31,7 @@ This is the Progressive Web Application built using HTML, CSS , JavaScript and J
 ## Additonal Information for scripts : Leaflet.js and Mapbox:
 
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information.
+
+| Region | Stack |
+| ---- | ---- |
+|ap-south-1 |  [<img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png">](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=OnDemandRedShift&templateURL=https://s3.amazonaws.com/cloudformation-templates123/OnDemandRedshift.yaml) |
